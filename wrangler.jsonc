@@ -1,0 +1,21 @@
+{
+  "name": "cf-secure-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2025-10-19",
+
+  // R2 binding
+  "r2_buckets": [
+    {
+      "binding": "FLAGS",
+      "bucket_name": "flags"
+    }
+  ],
+
+  // Worker route
+  "routes": [
+    {
+      "pattern": "tunnel.clfl.xyz/secure*",
+      "zone_name": "clfl.xyz"
+    }
+  ]
+}
